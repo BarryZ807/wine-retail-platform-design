@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wine retail platform · interaction prototype</title>
+<meta name="description" content="A clickable design prototype of a specialist wine shop: shop flow, wholesale quotes and a staff workspace with four roles. Generic content only.">
+<link rel="stylesheet" href="assets/prototype.css">
+</head>
+<body>
+
+<!-- Drawn bottle shapes. They stand in for product photography. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bdx" viewBox="0 0 60 200">
+    <path d="M24 6h12v48c0 12 16 14 16 30v102a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V84c0-16 16-18 16-30z" fill="var(--glass)"/>
+    <rect x="24" y="6" width="12" height="30" fill="var(--capsule)"/>
+    <rect x="12" y="112" width="36" height="46" rx="1" fill="var(--label)"/>
+    <path d="M18 126h24M22 134h16M18 148h24" stroke="var(--mark)" stroke-width="1.2"/>
+  </symbol>
+  <symbol id="bgy" viewBox="0 0 60 200">
+    <path d="M25 6h10v40c0 26 18 34 18 62v78a6 6 0 0 1-6 6H13a6 6 0 0 1-6-6v-78c0-28 18-36 18-62z" fill="var(--glass)"/>
+    <rect x="25" y="6" width="10" height="32" fill="var(--capsule)"/>
+    <rect x="10" y="124" width="40" height="42" rx="1" fill="var(--label)"/>
+    <path d="M16 136h28M20 144h20M24 156h12" stroke="var(--mark)" stroke-width="1.2"/>
+  </symbol>
+</svg>
+
+<div class="app">
+  <header class="bar">
+    <div class="title">Wine retail platform<small>interaction prototype</small></div>
+    <div class="seg" role="group" aria-label="Flow">
+      <button data-flow="shop" data-act="flow:shop">Shop</button>
+      <button data-flow="trade" data-act="flow:trade">Wholesale</button>
+      <button data-flow="staff" data-act="flow:staff">Staff</button>
+      <button data-flow="system" data-act="flow:system">Design system</button>
+    </div>
+    <span class="spacer"></span>
+    <div class="seg" role="group" aria-label="Frame size">
+      <button data-device="desktop" data-act="device:desktop">Desktop</button>
+      <button data-device="phone" data-act="device:phone">Phone</button>
+    </div>
+    <button class="linkbtn" data-act="restart">Restart</button>
+  </header>
+  <div class="notice">Design prototype. The shop, the wines, the prices and the people are generic placeholders. Nothing is sent or charged.</div>
+
+  <main class="main">
+    <div class="stage">
+      <div class="frame-label"><span id="frame-name"></span><span id="frame-size"></span></div>
+      <div class="device desktop" id="device"><div class="screen" id="screen"></div></div>
+    </div>
+    <aside class="notes" id="notes" aria-label="Design notes"></aside>
+  </main>
+
+  <nav class="flow" id="flow" aria-label="Steps in this flow"></nav>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="assets/prototype.js"></script>
+</body>
+</html>
