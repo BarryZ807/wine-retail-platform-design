@@ -2,6 +2,8 @@
 
 A clickable design prototype of a specialist wine shop. It shows how the shop, the wholesale desk and the staff workspace behave, screen by screen.
 
+The case study of the platform behind it is at [barryzehuizhang.com/work/wine-retail-platform](https://barryzehuizhang.com/work/wine-retail-platform/), and the prototype also runs at [barryzehuizhang.com/prototype/wine](https://barryzehuizhang.com/prototype/wine/).
+
 Open `index.html` in a browser. Nothing needs to be installed.
 
 ![The prototype viewer](screens/00-viewer.png)
